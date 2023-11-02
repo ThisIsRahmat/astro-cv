@@ -5,6 +5,9 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://v0x.nl",
   integrations: [
+    compress({
+      css: false,
+    }),
     mdx({
       drafts: true,
     }),
